@@ -28,35 +28,5 @@
     <Text Include="help.txt">
       <Filter>资源文件</Filter>
     </Text>
-    <Text Include="config\CollegeCode.txt">
-      <Filter>资源文件</Filter>
-    </Text>
-    <Text Include="config\CountryCode.txt">
-      <Filter>资源文件</Filter>
-    </Text>
-    <Text Include="config\EducationLevel.txt">
-      <Filter>资源文件</Filter>
-    </Text>
-    <Text Include="config\EnrollmentWay.txt">
-      <Filter>资源文件</Filter>
-    </Text>
-    <Text Include="config\MajorCode.txt">
-      <Filter>资源文件</Filter>
-    </Text>
-    <Text Include="config\MarriageState.txt">
-      <Filter>资源文件</Filter>
-    </Text>
-    <Text Include="config\NationCode.txt">
-      <Filter>资源文件</Filter>
-    </Text>
-    <Text Include="config\PoliticsStatus.txt">
-      <Filter>资源文件</Filter>
-    </Text>
-    <Text Include="config\RegionCode.txt">
-      <Filter>资源文件</Filter>
-    </Text>
-    <Text Include="config\StudentType.txt">
-      <Filter>资源文件</Filter>
-    </Text>
   </ItemGroup>
 </Project>

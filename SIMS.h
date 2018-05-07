@@ -20,6 +20,7 @@ int g_ThisYear;
 const int dayOfMonth[] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
 const string genderCN[] = { "男","女" };
 const int ID_Weight[] = { 7,9,10,5,8,4,2,1,6,3,7,9,10,5,8,4,2 };
+const string prompt = "# 学号 姓名 性别 国籍 出生日期 民族 婚姻状况 政治面貌 身份证号 学生类别 入学日期 入学方式 学院 专业 年级 学制 培养层次 班级 辅导员";
 
 struct Date
 {
@@ -27,6 +28,7 @@ struct Date
     int month;
     int day;
 };
+
 
 struct StuInfo
 {
@@ -49,6 +51,39 @@ struct StuInfo
     int schoolingLength;
     int educationLevel;
     string counsellor;
+    
+    const string operator[] (size_t idx) const
+    {
+        switch (idx)
+        {
+        case 1:return number;
+        case 2:return name;
+        case 3:return to_string (birthday->year) + to_string (birthday->month) + to_string (birthday->day);
+        case 4:return to_string (college);
+        case 5:return to_string (major);
+        case 6:return to_string (grade);
+        case 7:return _class;
+        case 8:return counsellor;
+        }
+    } //improve
+    string operator[] (size_t idx)
+    {
+        switch (idx)
+        {
+        case 1:return number;
+        case 2:return name;
+        case 3:return to_string (enrollmentDate->year) + "." + to_string (enrollmentDate->month) + "." + to_string (enrollmentDate->day);
+        case 4:return to_string (college);
+        case 5:return to_string (major);
+        case 6:return to_string (grade);
+        case 7:return _class;
+        case 8:return counsellor;
+        case 9:return IDnumber;
+
+        default:throw ("Not correct index!"); //debug
+        }
+    }
+
 };
 
 vector<StuInfo *> StudentVec;
@@ -60,6 +95,9 @@ void ShowCopyright ();
 void ShowTime ();
 //主页面
 void ShowUI ();
+void ShowAddUI ();
+void ShowLookupUI ();
+void ShowDelUI ();
 
 void Add ();
 int Input ();
@@ -85,7 +123,7 @@ void ShowStudentInfo (StuInfo * stu);
 void Skim ();
 
 void Lookup ();
-void LookupNumber (string number);
+void LookupItem (size_t idx, string cmp);
 
 
 void Del ();
@@ -97,6 +135,7 @@ void Statistic ();
 void Sort ();
 
 
+void SaveToFile (string filename);
 //Assist
 void ClearBuff ();
 

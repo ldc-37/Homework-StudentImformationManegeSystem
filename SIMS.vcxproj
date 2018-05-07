@@ -153,16 +153,6 @@
     <ClInclude Include="SIMS.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="config\CollegeCode.txt" />
-    <Text Include="config\CountryCode.txt" />
-    <Text Include="config\EducationLevel.txt" />
-    <Text Include="config\EnrollmentWay.txt" />
-    <Text Include="config\MajorCode.txt" />
-    <Text Include="config\MarriageState.txt" />
-    <Text Include="config\NationCode.txt" />
-    <Text Include="config\PoliticsStatus.txt" />
-    <Text Include="config\RegionCode.txt" />
-    <Text Include="config\StudentType.txt" />
     <Text Include="help.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
