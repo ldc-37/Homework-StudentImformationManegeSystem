@@ -98,6 +98,8 @@ void ShowUI ();
 void ShowAddUI ();
 void ShowLookupUI ();
 void ShowDelUI ();
+void ShowModifyUI ();
+void ShowModifyItemUI ();
 
 void Add ();
 int Input ();
@@ -118,6 +120,7 @@ void InputCounsellor (StuInfo * stu);
 
 string GetAttrName (string filename, int id, string configname);
 string GetAttrName (string filename, int id);
+int FindSingleStu (char o, string cmp);
 void ShowStudentInfo (StuInfo * stu);
 
 void Skim ();
@@ -129,6 +132,7 @@ void LookupItem (size_t idx, string cmp);
 void Del ();
 
 void Modify ();
+void ModifyItem (char n, StuInfo * stu);
 
 void Statistic ();
 
