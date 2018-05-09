@@ -51,6 +51,20 @@ struct StuInfo
     int schoolingLength;
     int educationLevel;
     string counsellor;
+    time_t timestamp;
+
+    const int GetiNumber ()
+    {
+        return stoi (number);
+    }
+    const int GetiBirthday ()
+    {
+        return birthday->year * 10000 + birthday->month * 100 + birthday->day;
+    }
+    const int GetiEnrollmentDate ()
+    {
+        return enrollmentDate->year * 10000 + enrollmentDate->month * 100 + enrollmentDate->day;
+    }
     
     const string operator[] (size_t idx) const
     {
@@ -98,13 +112,14 @@ void ShowUI ();
 void ShowAddUI ();
 void ShowLookupUI ();
 void ShowDelUI ();
+void ShowStatisticsUI ();
 void ShowModifyUI ();
 void ShowModifyItemUI ();
+void ShowSortUI ();
 
 void Add ();
 int Input ();
 int FileInput (string filename);
-void FileOutput (string filename, bool isClearFirst);
 void InputWithConfig (StuInfo * stu, int * attrval, string filename, string inputText, string resultText, int defOpt = 0);
 void InputNumber (StuInfo * stu);
 void InputName (StuInfo * stu);
@@ -134,9 +149,16 @@ void Del ();
 void Modify ();
 void ModifyItem (char n, StuInfo * stu);
 
-void Statistic ();
+void Statistics ();
+void GradeSummary ();
+void CollegeSummary ();
+void GenderSummary ();
+void CountrySummary ();
+void NationSummary ();
 
+void Clear ();
 void Sort ();
+void Reverse ();
 
 
 void SaveToFile (string filename);
