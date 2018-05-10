@@ -4,10 +4,10 @@
 #include <string>
 #include <vector>
 #include <ctime> //use to get time
-#include <conio.h> //getch ()
+#include <conio.h> //_getch ()
 #include <windows.h> //Sleep ()
-#include <cctype> 
-//#include <sstream>
+#include <cctype>  //idupper ()
+#include <iomanip> // control output
 
 using namespace std;
 
