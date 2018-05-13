@@ -1,8 +1,7 @@
-*.sln
+﻿*.sln
 .vs/
 Debug/
 backupdata.txt
 help.txt
--StudentDataMain.txt
--StudentDataNew.txt
-说明.txt
+StudentDataMain.txt
+StudentDataNew.txt
