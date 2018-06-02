@@ -36,5 +36,5 @@ https://blog.csdn.net/c20182030/article/details/69667965
 http://www.cnblogs.com/oomusou/archive/2008/08/01/vector_struct.html 等等  
 配置文件部分参考：https://blog.csdn.net/fuxingwe/article/details/8836180
 
-###备注###
-能写这么多，都得*“归功于”*作业要求写的设计思路和使用手册。。。。。
+### 备注 ###  
+能写这么多，都得*归功于*作业要求写的设计思路和使用手册。。。。。
